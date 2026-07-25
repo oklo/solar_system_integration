@@ -45,7 +45,16 @@ Earth--Mars close approaches are first detected using REBOUND's line collision m
 
 The initial animation campaign used seeds 20260722--20260726, 2000 impulses, and a 10 Myr integration.  Across these five examples, Earth's final semimajor axis lies between 1.374 and 1.444 AU.  The range is close to the two-body target, but the resulting eccentricities and the angular relation to Mars differ from seed to seed.
 
-Mars responds more dramatically.  In the same five runs, Mars' final semimajor axis ranges from 1.208 to 2.692 AU, and its final eccentricity reaches 0.443.  The closest approach in this first sweep occurs for seed 20260725 at $t=9.227$ Myr, with center-to-center separation $0.001069$ AU.  This is approximately $1.60\times 10^5$ km, or 16.4 times the sum of the Earth and Mars radii, and is not a collision.
+Mars responds more dramatically.  In the same five runs, Mars' final semimajor axis ranges from 1.208 to 2.692 AU, and its final eccentricity reaches 0.443.  The closest approach in this first sweep occurs for seed 20260725 at $t=9.227$ Myr, with center-to-center separation $0.001069$ AU.  This is approximately $1.60\times 10^5$ km, or 16.4 times the sum of the Earth and Mars radii, and is not a collision.  Figure~\ref{fig:seed-sweep} shows the semimajor-axis evolution for the five runs.
+
+\begin{figure*}
+\centering
+\includegraphics[width=0.92\textwidth]{figures/move_earth_seed_sweep_semimajor_axes.pdf}
+\caption{
+Semimajor-axis evolution in the five 10 Myr kicked-Earth integrations used for the initial animation sweep.  Each colored curve is a different random seed.  Earth is driven outward toward the two-body target near 1.4 AU, while Mars shows a much larger seed-dependent response.  The dashed horizontal lines mark the initial Earth and Mars semimajor axes, and the dotted line marks the nominal 1.4 AU Earth target.
+}
+\label{fig:seed-sweep}
+\end{figure*}
 
 \subsection{Refined close-encounter search}
 
@@ -56,6 +65,15 @@ After the initial sweep, the search was restarted on fresh seeds with a 50,000 k
 after the initial epoch, with Earth--Mars center-to-center distance 16,512 km.  Taking $R_\oplus + R_{\rm Mars}=9760.5$ km, the surface clearance is 6,752 km, or 1.69 summed radii.  The bodies do not physically collide in the refined integration.
 
 A second notable close encounter is seed 20260906.  Its refined minimum distance is 36,516 km center-to-center, corresponding to a surface clearance of 26,755 km, or 3.74 summed radii.  This case is useful as a less extreme but still visually dramatic non-collisional encounter.
+
+\begin{figure*}
+\centering
+\includegraphics[width=0.92\textwidth]{figures/move_earth_refined_encounters.pdf}
+\caption{
+Refined close-encounter candidates and the geometry of the closest event found so far.  Left: candidate Earth--Mars minimum distances after IAS15 replay/refinement, plotted in units of $R_\oplus+R_{\rm Mars}$.  The solid horizontal line is physical contact, and the dotted line is the 50,000 km screening threshold.  Right: a true-scale view of the seed 20260917 encounter at the refined minimum.  The Earth and Mars image textures are the same procedural visual assets used in the animation workflow, redrawn here on a light publication background.
+}
+\label{fig:refined-encounters}
+\end{figure*}
 
 \section{Discussion}
 
