@@ -20,6 +20,11 @@ A five-seed sweep (`20260722` through `20260726`) moved Earth's final semimajor 
 
 Subsequent encounter searches extended the integrations and used a `50,000 km` Earth-Mars screening threshold followed by IAS15 replay/refinement of candidates.  The closest refined case currently found is seed `20260917`, with minimum center-to-center distance `16,512 km`, surface clearance `6,752 km`, or `1.69` summed Earth-plus-Mars radii at `9.210348 Myr`; no physical collision was confirmed.  Another useful high-drama non-collision case is seed `20260906`, with `36,516 km` center-to-center distance, `26,755 km` surface clearance, and `3.74` summed radii.  Threshold-trigger logs are treated as candidate finders only; refined replay is required before quoting a close-encounter distance.
 
+A short ApJ-style draft describing the kicked-Earth results is available as LaTeX source and rendered PDF:
+
+- `papers/move_the_earth_apj_letter.tex`
+- `papers/move_the_earth_apj_letter.pdf`
+
 ## Install
 
 ```bash
