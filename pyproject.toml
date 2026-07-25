@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "solar-system-integration"
+version = "0.1.0"
+description = "REBOUND integrations and visualizations for long-term Solar System and kicked-Earth experiments."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "matplotlib==3.11.0",
+  "numpy==2.5.1",
+  "rebound==5.0.1",
+  "skyfield==1.54",
+  "jplephem==2.24",
+]
+

@@ -1,0 +1,25 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# Generated integrations, rendered movies, search logs, and scratch products.
+outputs/
+tmp/
+scratch/
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Large or machine-local analysis dumps.
+*.log
+pid.txt
+

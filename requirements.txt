@@ -1,0 +1,5 @@
+rebound==5.0.1
+skyfield==1.54
+jplephem==2.24
+numpy==2.5.1
+matplotlib==3.11.0
